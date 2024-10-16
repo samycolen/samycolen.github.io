@@ -107,7 +107,7 @@ li::before {
 /* Mobile Styles */
 @media (max-width: 768px) {
   #Dheader {
-    margin-top: 5%; /* Adjusted margin for mobile */
+    margin-top: 18%; /* Adjusted margin for mobile */
     font-size: 20px; /* Adjusted font size for mobile */
   }
 
@@ -123,7 +123,7 @@ li::before {
   }
 
   .Ddesc p {
-    margin-bottom: 10px; /* Reduced spacing between paragraphs */
+    margin-bottom: 15px; /* Reduced spacing between paragraphs */
   }
 
   .iico {
@@ -139,9 +139,10 @@ li::before {
   .dProjSpan {
     width: 90%; /* Make project box wider on mobile */
   }
-
+  /*
   .DlistDiv {
-    flex-direction: column; /* Stack list items vertically on mobile */
-    align-items: flex-start; /* Align items to the start */
+    flex-direction: column; /* Stack list items vertically on mobile 
+    align-items: flex-start; /* Align items to the start 
   }
+  */
 }
