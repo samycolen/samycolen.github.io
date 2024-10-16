@@ -128,7 +128,7 @@ function App() {
         </div>
 
         <div id="dico" className="Ddesc">
-          <a href="https://twitter.com/karpathy">
+          <a href="https://twitter.com/SammedMangave">
             <img src="/images/twitter.png" alt="" className="iico" />
           </a>
           <a href="https://github.com/samycolen">
@@ -137,22 +137,13 @@ function App() {
           <a href="https://www.linkedin.com/in/SammedMangave/">
             <img src="/images/Linkedin.png" alt="" className="iico" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/SammedMangave/"
-            className="dlink"
-          >
+          <a href="https://http.cat/409" className="dlink">
             [Essays]
           </a>
-          <a
-            href="https://www.linkedin.com/in/SammedMangave/"
-            className="dlink"
-          >
+          <a href="https://http.cat/409" className="dlink">
             [Resume]
           </a>
-          <a
-            href="https://www.linkedin.com/in/SammedMangave/"
-            className="dlink"
-          >
+          <a href="https://http.cat/409" className="dlink">
             [Papers]
           </a>
         </div>
