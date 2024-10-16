@@ -1,0 +1,105 @@
+.App {
+  text-align: left;
+  color: black;
+}
+
+/* header */
+
+#Dheader {
+  margin-top: 8%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 25px;
+  font-weight: 450;
+}
+#email {
+  color: grey;
+}
+
+/* Description*/
+
+.Ddesc {
+  padding-left: 17.5%;
+  margin: 18px;
+}
+
+.Ddesc p {
+  margin-bottom: 22px;
+}
+.Ddesc a {
+  color: rgb(29 78 216);
+}
+
+/* ICONS*/
+#dico {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.iico {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+}
+
+.dlink {
+  margin-right: 15px;
+}
+
+/* projects */
+
+#dproj {
+  margin-top: 4.5%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.dProjSpan {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  width: 80%;
+  color: black;
+}
+.dProjSpanHead {
+  font-size: 1.2rem;
+}
+.dProjSpanHead a {
+  color: black;
+}
+
+.DlistInfo {
+  margin-right: 8px;
+}
+
+.DlistInfo a {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "-";
+  margin-right: 5px;
+}
+
+.DlistDiv {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+#DlistDivDown ::before {
+  content: none !important;
+}
+
+.DlistDesc a {
+  text-decoration: underline;
+  color: rgb(29 78 216);
+}
