@@ -103,3 +103,45 @@ li::before {
   text-decoration: underline;
   color: rgb(29 78 216);
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #Dheader {
+    margin-top: 5%; /* Adjusted margin for mobile */
+    font-size: 20px; /* Adjusted font size for mobile */
+  }
+
+  #dico {
+    margin-top: 20px; /* Adjust margin for social icons */
+    padding-left: 5%; /* Reduced left padding for mobile */
+    padding-right: 5%; /* Added right padding for mobile */
+  }
+
+  .Ddesc {
+    padding-left: 5%; /* Reduced left padding for mobile */
+    margin: 10px; /* Adjusted margin for mobile */
+  }
+
+  .Ddesc p {
+    margin-bottom: 10px; /* Reduced spacing between paragraphs */
+  }
+
+  .iico {
+    width: 24px; /* Reduced icon size for mobile */
+    height: 24px; /* Reduced icon size for mobile */
+    margin-right: 10px; /* Reduced space between icons */
+  }
+
+  #dproj {
+    font-size: 18px; /* Adjusted font size for projects section */
+  }
+
+  .dProjSpan {
+    width: 90%; /* Make project box wider on mobile */
+  }
+
+  .DlistDiv {
+    flex-direction: column; /* Stack list items vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+  }
+}
