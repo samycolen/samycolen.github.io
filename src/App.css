@@ -7,6 +7,7 @@
 
 #Dheader {
   margin-top: 8%;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   line-height: 2rem;
   font-size: 25px;
@@ -107,7 +108,7 @@ li::before {
 /* Mobile Styles */
 @media (max-width: 768px) {
   #Dheader {
-    margin-top: 18%; /* Adjusted margin for mobile */
+    margin-top: 22%; /* Adjusted margin for mobile */
     font-size: 20px; /* Adjusted font size for mobile */
   }
 
