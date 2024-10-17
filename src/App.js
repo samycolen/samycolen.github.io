@@ -107,7 +107,6 @@ function App() {
 
         {/* Discription */}
         <div id="para" className="Ddesc">
-          <p>Work at Launchpad.ai fellowship </p>
           <p>
             Building <a href="twitter">AImediaXfactor</a>, A platform to
             understand the AI and Media w/t Xfactors like
