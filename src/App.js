@@ -136,6 +136,12 @@ function App() {
           <a href="https://www.linkedin.com/in/SammedMangave/">
             <img src="/images/Linkedin.png" alt="" className="iico" />
           </a>
+          <a href="https://www.instagram.com/_sammed.mangave/">
+            <img src="/images/ig.png" alt="" className="iicoIM" />
+          </a>
+          <a href="https://medium.com/@sammed.mangave20">
+            <img src="/images/Md.png" alt="" className="iicoIM" />
+          </a>
           <a href="https://http.cat/409" className="dlink">
             [Essays]
           </a>
