@@ -36,6 +36,10 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
+  
+}
+.dlink{
+  margin-right: 14px;
 }
 
 .iico {
@@ -47,11 +51,6 @@
   width: 23.5px; /* Reduced icon size for mobile */
   height: 23.5px; /* Reduced icon size for mobile */
   margin-right: 15px; /* Reduced space between icons */
-}
-
-.dlink {
-  margin-right: 7px;
-  margin-left: -2px;
 }
 
 /* projects */
@@ -127,11 +126,16 @@ li::before {
   .Ddesc {
     padding-left: 5%; /* Reduced left padding for mobile */
     margin: 10px; /* Adjusted margin for mobile */
+    max-width: 100vw;
   }
 
   .Ddesc p {
     margin-bottom: 15px; /* Reduced spacing between paragraphs */
     font-size: 8px;
+  }
+  .dlink {
+    margin-right: 7px;
+    margin-left: -2px;
   }
 
   .iico {
@@ -139,7 +143,7 @@ li::before {
     height: 24px; /* Reduced icon size for mobile */
     margin-right: 10px; /* Reduced space between icons */
   }
-  
+
   .iicoIM {
     width: 20px; /* Reduced icon size for mobile */
     height: 20px; /* Reduced icon size for mobile */
