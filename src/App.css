@@ -48,9 +48,10 @@
   height: 23.5px; /* Reduced icon size for mobile */
   margin-right: 15px; /* Reduced space between icons */
 }
-    
+
 .dlink {
-  margin-right: 15px;
+  margin-right: 7px;
+  margin-left: -2px;
 }
 
 /* projects */
@@ -130,6 +131,7 @@ li::before {
 
   .Ddesc p {
     margin-bottom: 15px; /* Reduced spacing between paragraphs */
+    font-size: 5px;
   }
 
   .iico {

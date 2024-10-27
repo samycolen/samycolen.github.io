@@ -8,6 +8,8 @@ function App() {
       title: "Sentiment Analysis",
       description:
         "A random Model I made for fun to analyze different sentiments.",
+      boxDescription: "",
+      imagePath: "",
       GHlink: "https://github.com/samycolen/SentimentAnalysis",
       box: true,
     },
@@ -15,6 +17,8 @@ function App() {
       infoLink: "#",
       title: "Disease Mapping Using AI Cluster",
       description: "Use of clusters to Map the diseases",
+      boxDescription: "",
+      imagePath: "",
       GHlink: "https://github.com/samycolen/Mapper",
       box: true,
     },
@@ -44,6 +48,8 @@ function App() {
       infoLink: "#",
       title: "ME",
       description: "A React Business Website for neighbours business",
+      boxDescription: "",
+      imagePath: "",
       GHlink: "https://github.com/samycolen/ME",
       box: true,
     },
@@ -51,6 +57,8 @@ function App() {
       infoLink: "#",
       title: "Movie Browser",
       description: "A react based Movie Browser using OMDB's Movie dataset",
+      boxDescription: "",
+      imagePath: "",
       link: "https://samycolen.github.io/Movie-Browser/",
       GHlink: "https://github.com/samycolen/Movie-Browser",
       box: true,
@@ -59,6 +67,8 @@ function App() {
       infoLink: "#",
       title: "First Profile Website ",
       description: "A Profile website using html,css and js",
+      boxDescription: "",
+      imagePath: "",
       link: "https://samycolen.github.io/SammedMangave/",
       GHlink: "https://github.com/samycolen/SammedMangave",
       box: true,
@@ -76,6 +86,8 @@ function App() {
       title: "TagCount",
       description:
         "RFID tag based electronics sytem project for College student's Attendance",
+      boxDescription: "",
+      imagePath: "",
       GHlink: "#",
       box: true,
     },
@@ -195,7 +207,7 @@ function App() {
                     <p className="dProjSpanHead">
                       <a href={project.GHlink}>{project.title}</a>
                     </p>
-                    <p>{project.description}</p>
+                    <p>{project.boxDescription}</p>
                   </div>
                 </div>
               )}
