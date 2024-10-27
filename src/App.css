@@ -131,7 +131,7 @@ li::before {
 
   .Ddesc p {
     margin-bottom: 15px; /* Reduced spacing between paragraphs */
-    font-size: 5px;
+    font-size: 8px;
   }
 
   .iico {
@@ -139,6 +139,7 @@ li::before {
     height: 24px; /* Reduced icon size for mobile */
     margin-right: 10px; /* Reduced space between icons */
   }
+  
   .iicoIM {
     width: 20px; /* Reduced icon size for mobile */
     height: 20px; /* Reduced icon size for mobile */
