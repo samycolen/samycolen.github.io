@@ -149,7 +149,7 @@ function App() {
             <img src="/images/Linkedin.png" alt="" className="iico" />
           </a>
           <a href="https://www.instagram.com/_sammed.mangave/">
-            <img src="/images/ig.png" alt="" className="iicoIM" />
+            <img src="/images/ig.png" alt="" className="iicoIM" id="igIcon" />
           </a>
           <a href="https://medium.com/@sammed.mangave20">
             <img src="/images/Md.png" alt="" className="iicoIM" />
