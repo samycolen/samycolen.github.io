@@ -36,9 +36,8 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
-  
 }
-.dlink{
+.dlink {
   margin-right: 14px;
 }
 
@@ -128,7 +127,7 @@ li::before {
     margin: 10px; /* Adjusted margin for mobile */
     max-width: 100vw;
   }
-  
+
   .para {
     margin-bottom: 15px; /* Reduced spacing between paragraphs */
     font-size: 8px;
@@ -145,9 +144,7 @@ li::before {
   }
 
   .iicoIM {
-    width: 20px; /* Reduced icon size for mobile */
-    height: 20px; /* Reduced icon size for mobile */
-    margin-right: 10px; /* Reduced space between icons */
+    display: none;
   }
 
   #dproj {
