@@ -154,7 +154,7 @@ function App() {
           <a href="https://medium.com/@sammed.mangave20">
             <img src="/images/Md.png" alt="" className="iicoIM" />
           </a>
-          <a href="https://http.cat/409" className="dlink">
+          <a href="https://samycolen.github.io/EssayRepo/" className="dlink">
             [Essays]
           </a>
           <a href="https://http.cat/409" className="dlink">
