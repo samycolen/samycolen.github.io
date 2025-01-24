@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Suisse";
+  src: url("fonts/Suisse.woff2") format("woff2"),
+    url("fonts/Suisse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Suisse";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+}
+/* Header */
+#navbar {
+  padding: 20px;
+  padding-left: 0;
+  font-size: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+#navbar a {
+  font-family: "Georgia", serif; /* Match the desired style */
+  font-size: 1.5em; /* Adjust for a larger look */
+  font-weight: 400; /* Regular weight */
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding-right: 25px;
+}
+
+#navbar a:hover {
+  transform: translateY(-7px);
+}
+
+/* Header text */
+#header p {
+  font-size: 2em; /* Larger font for header text */
+  font-weight: bold; /* Corrected bold font style */
+  color: black;
+}
+
+/*maincontainer----------------------*/
+
+#maincontainer {
+  position: relative;
+  max-width: 90%;
+  margin: 0;
+}
+
+/* Main styling */
+#main {
+  max-width: 700px;
+  margin: 0;
+}
+
+/* Styling list of essays */
+.essay_heading {
+  margin-bottom: -17px;
+  margin-top: 10px;
+}
+.styledhr {
+  height: 1.5px;
+  border: 0;
+  padding: 0;
+  margin: 20px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+ul {
+  display: flex;
+  flex-direction: column; /* Fix typo */
+  align-items: flex-start;
+  margin-left: -37px;
+  margin-top: 30px;
+}
+li.EssayEntry {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.EssayDate {
+  font-size: 11px;
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a.EssayName {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Ensure links stack with spacing */
+a.EssayName span {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: black;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  #navbar {
+    margin-right: 15px;
+    font-size: 15px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  #navbar a {
+    font-size: 1.2em; /* Smaller font for mobile */
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  /* Header text */
+  #header p {
+    font-size: 1.8em; /* Slightly smaller font */
+  }
+
+  /* Main container */
+  #maincontainer {
+    max-width: 100%;
+  }
+
+  #main {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Essays list */
+  ul {
+    margin-left: 0;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+
+  li.EssayEntry {
+    margin-bottom: 20px;
+  }
+
+  .EssayDate {
+    font-size: 10px;
+  }
+
+  a.EssayName {
+    font-size: 16px;
+  }
+
+  /* Styled horizontal rule */
+  .styledhr {
+    margin: 15px 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  /* Input field */
+  input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+  }
+}

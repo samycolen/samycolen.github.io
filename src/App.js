@@ -8,8 +8,10 @@ function App() {
       title: "Sentiment Analysis",
       description:
         "A random Model I made for fun to analyze different sentiments.",
-      boxDescription: "",
-      imagePath: "",
+      boxDescription:
+        "A random Model I made for fun to analyze different sentiments.Basically, we used Stanford's NLP library to train the model in order to analyze the sentiment of the words or line given by the user",
+      imagePath: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
+      logo: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
       GHlink: "https://github.com/samycolen/SentimentAnalysis",
       box: true,
     },
@@ -18,6 +20,7 @@ function App() {
       title: "Disease Mapping Using AI Cluster",
       description: "Use of clusters to Map the diseases",
       boxDescription: "",
+      logo: "/images/project/MovieBrowser/P1.png",
       imagePath: "",
       GHlink: "https://github.com/samycolen/Mapper",
       box: true,
@@ -57,8 +60,11 @@ function App() {
       infoLink: "#",
       title: "Movie Browser",
       description: "A react based Movie Browser using OMDB's Movie dataset",
-      boxDescription: "",
-      imagePath: "",
+      boxDescription:
+        "We created a react website which is a Movie recommendation browser. we used the OMDB's dataset where large number of movies are there. user can filter the movies based on the year/genre",
+      imagePath: "/images/project/MovieBrowser/d2.png",
+      //imagePath: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
+      logo: "/images/project/MovieBrowser/d1.png",
       link: "https://samycolen.github.io/Movie-Browser/",
       GHlink: "https://github.com/samycolen/Movie-Browser",
       box: true,
@@ -67,8 +73,9 @@ function App() {
       infoLink: "#",
       title: "First Profile Website ",
       description: "A Profile website using html,css and js",
-      boxDescription: "",
-      imagePath: "",
+      boxDescription:
+        "A simple website for Profile designed using html,css and js",
+      imagePath: "/images/project/PersonalProject/PW1.png",
       link: "https://samycolen.github.io/SammedMangave/",
       GHlink: "https://github.com/samycolen/SammedMangave",
       box: true,
@@ -154,7 +161,7 @@ function App() {
           <a href="https://medium.com/@sammed.mangave20">
             <img src="/images/Md.png" alt="" className="iicoIM" />
           </a>
-          <a href="https://samycolen.github.io/EssayRepo/" className="dlink">
+          <a href="/essays/index.html" className="dlink">
             [Essays]
           </a>
           <a href="https://http.cat/409" className="dlink">
@@ -204,10 +211,35 @@ function App() {
                   className="DlistDiv "
                 >
                   <div className="dProjSpan">
+                    {/* logo of the project */}
+                    {project.logo && (
+                      <p>
+                        <img
+                          src={project.logo}
+                          alt={`${project.title} logo`}
+                          className="dProjSpanLogo"
+                        />
+                      </p>
+                    )}
+                    {/* 2. heading of the projet */}
                     <p className="dProjSpanHead">
                       <a href={project.GHlink}>{project.title}</a>
                     </p>
+
+                    {/* 3 descriptioin of the project */}
                     <p>{project.boxDescription}</p>
+
+                    {/* 4  image in the description */}
+
+                    {project.imagePath && (
+                      <p>
+                        <img
+                          src={project.imagePath}
+                          alt={`${project.title} imagePath`}
+                          className="dProjSpanImage"
+                        />
+                      </p>
+                    )}
                   </div>
                 </div>
               )}
