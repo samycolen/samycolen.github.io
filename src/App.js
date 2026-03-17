@@ -41,7 +41,7 @@ function App() {
       description:
         "Repair and reinstallation of institutional 3D printer · 2023",
       link: "#",
-      image: "/images/project/3DPrinter/3D.gif",
+      video: "/videos/3Dprinter/3D.mp4",
     },
     {
       title: "trappedMachine",
