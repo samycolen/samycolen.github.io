@@ -1,251 +1,186 @@
 import "./App.css";
-import { useState } from "react";
 
 function App() {
-  const projects = [
+  /* ================= RESEARCH DATA ================= */
+
+  const research = [
     {
-      infoLink: "#",
-      title: "Sentiment Analysis",
-      description:
-        "A random Model I made for fun to analyze different sentiments.",
-      boxDescription:
-        "A random Model I made for fun to analyze different sentiments.Basically, we used Stanford's NLP library to train the model in order to analyze the sentiment of the words or line given by the user",
-      imagePath: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
-      logo: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
-      GHlink: "https://github.com/samycolen/SentimentAnalysis",
-      box: true,
-    },
-    {
-      infoLink: "#",
       title: "Disease Mapping Using AI Cluster",
-      description: "Use of clusters to Map the diseases",
-      boxDescription: "",
-      logo: "/images/project/MovieBrowser/P1.png",
-      imagePath: "",
-      GHlink: "https://github.com/samycolen/Mapper",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "AImediaXfactor",
-      description: "A platform to understand the AI and Media w/t Xfactors",
-      GHlink: "#",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "DATAsset",
-      description: "Project's direction : data will going to assets in future.",
-      GHlink: "https://github.com/samycolen/DATAsset",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "3D printer Re-Installation ",
-      description: "A project to re-install/repair of college's 3D printer.",
-      GHlink: "#",
-      link: "#",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "ME",
-      description: "A React Business Website for neighbours business",
-      boxDescription: "",
-      imagePath: "",
-      GHlink: "https://github.com/samycolen/ME",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "Movie Browser",
-      description: "A react based Movie Browser using OMDB's Movie dataset",
-      boxDescription:
-        "We created a react website which is a Movie recommendation browser. we used the OMDB's dataset where large number of movies are there. user can filter the movies based on the year/genre",
-      imagePath: "/images/project/MovieBrowser/d2.png",
-      //imagePath: "/images/project/SentimentAnalysis/P-SentimentAnalysis.png",
-      logo: "/images/project/MovieBrowser/d1.png",
-      link: "https://samycolen.github.io/Movie-Browser/",
-      GHlink: "https://github.com/samycolen/Movie-Browser",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "First Profile Website ",
-      description: "A Profile website using html,css and js",
-      boxDescription:
-        "A simple website for Profile designed using html,css and js",
-      imagePath: "/images/project/PersonalProject/PW1.png",
-      link: "https://samycolen.github.io/SammedMangave/",
-      GHlink: "https://github.com/samycolen/SammedMangave",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "trappedMachine",
+      authors:
+        "Sammed Mangave, AP Dr Vijanth Sagayan A/L Asirvadam — UTP Malaysia Research Fellowship",
       description:
-        "Simple project to manage the workspace across multiple device",
-      GHlink: "https://github.com/samycolen/trappedMachine",
-      box: true,
-    },
-    {
-      infoLink: "#",
-      title: "TagCount",
-      description:
-        "RFID tag based electronics sytem project for College student's Attendance",
-      boxDescription: "",
-      imagePath: "",
-      GHlink: "#",
-      box: true,
+        "Clustering-based analysis for mapping disease patterns using large-scale health datasets.",
+      status: "Unpublished research · 2024",
+      paperLink: "https://github.com/Sammed-Mangave/Mapper/blob/main/Disease%20Mapping%20using%20AI%20cluster%20Report.pdf",
+      codeLink: "https://github.com/Sammed-Mangave/Mapper",
+      dateset: "https://github.com/Sammed-Mangave/Mapper/blob/main/code1_dataset.csv",
     },
   ];
 
-  // State to manage which project is expanded
-  const [expandedProject, setExpandedProject] = useState([]);
+  /* ================= PROJECT DATA ================= */
 
-  // Toggle the expansion of a project
-  const toggleProject = (e, index) => {
-    e.preventDefault(); // Prevents link refresh
+  const projects = [
+    {
+      title: "AIvisora",
+      description:
+        "Every concept you read, visualize it in 3D. Just prompt it · 2025",
+      link: "https://www.getaivisora.com",
+      video: "/videos/AIvisoraV1.mp4",
+    },
 
-    if (expandedProject.includes(index)) {
-      // If it's expanded, remove it from the array
-      setExpandedProject(expandedProject.filter((i) => i !== index));
-    } else {
-      // If it's not expanded, add it to the array
-      setExpandedProject([...expandedProject, index]);
-    }
-  };
+    {
+      title: "Movie Browser",
+      description:
+        "React movie recommendation browser using OMDB dataset · 2023",
+      link: "https://samycolen.github.io/Movie-Browser/",
+      video: "/videos/MovieBrowser.mp4",
+    },
+
+    {
+      title: "3D Printer Re-Installation",
+      description:
+        "Repair and reinstallation of institutional 3D printer · 2023",
+      link: "#",
+      image: "/images/project/3DPrinter/3D.gif",
+    },
+    {
+      title: "trappedMachine",
+      description:
+        "Workspace synchronization across multiple devices",
+      link: "https://sammed-mangave.github.io/trappedMachine/",
+      image: "/images/project/Trapped/image.png",
+    },
+    {
+      title: "TagCount",
+      description:
+        "RFID-based attendance system for students..each students identycard will have specific tag's which will act as a attendance filler.",
+      link: "/images/project/RFID/circuit.png",
+      image: "/images/project/RFID/Preview.png",
+    },
+
+    {
+      title: "DATAsset",
+      description:
+        "Project exploring data as future assets n put it at center.",
+      link: "https://github.com/Sammed-Mangave/DATAsset",
+      image: "/images/project/DATA/image.png",
+    },
+
+    {
+      title: "Sentiment Analysis",
+      description:
+        "Sentiment analysis model using Stanford NLP library",
+      link: "https://github.com/samycolen/SentimentAnalysis",
+      image: "/images/project/SentimentAnalysis/image.png",
+    },
+
+  ];
 
   return (
     <div className="App">
       <div id="Droot">
-        {/* Header */}
+        {/* HEADER */}
         <div id="Dheader" className="Ddesc">
           <p>Sammed Mangave</p>
         </div>
 
-        {/* Discription */}
+        {/* BIO */}
         <div id="para" className="Ddesc">
           <p>
-            Building <a href="twitter">AImediaXfactor</a>, A platform to
-            understand the AI and Media w/t Xfactors like
-            Politics,Education,Consumerisms etc
+            Building{" "}
+            <a href="https://www.getaivisora.com" target="_blank" rel="noreferrer">
+              AIvisora
+            </a>{" "}
+            <br></br>
+            — a prompt-to-3D visualization platform that turns prompts into
+            interactive visualizations, helping creators, teachers, students,
+            and anyone understand how things work visually.
           </p>
+
           <p>
             I also did a research fellowship at{" "}
-            <a href="https://www.utp.edu.my/Pages/Home.aspx">UTP, Malaysia</a>,
-            under the supervision of
-            <a href="https://scholar.google.com.my/citations?user=nE7YluwAAAAJ&hl=en">
-              {""} AP Dr Vijanth Sagayan A/L Asirvadam
+            <a href="https://www.utp.edu.my/Pages/Home.aspx">
+              UTP, Malaysia
             </a>
-            .
-            <br /> Research is based on how can we use AI cluster to Map the
-            diseases.
+            , under the supervision of{" "}
+            <a href="https://scholar.google.com.my/citations?user=nE7YluwAAAAJ&hl=en">
+              AP Dr Vijanth Sagayan A/L Asirvadam
+            </a>
+            . Research is based on how we can use AI clusters to map diseases.
           </p>
+
           <p id="email">sammed.Mangave20 [at] gmail [dot] com</p>
         </div>
 
+        {/* SOCIAL */}
         <div id="dico" className="Ddesc">
-          <a href="https://twitter.com/SammedMangave">
-            <img src="/images/twitter.png" alt="" className="iico" />
-          </a>
-          <a href="https://github.com/samycolen">
-            <img src="/images/github.png" alt="" className="iico" />
-          </a>
-          <a href="https://www.linkedin.com/in/SammedMangave/">
-            <img src="/images/Linkedin.png" alt="" className="iico" />
-          </a>
-          <a href="https://www.instagram.com/_sammed.mangave/">
-            <img src="/images/ig.png" alt="" className="iicoIM" id="igIcon" />
-          </a>
-          <a href="https://medium.com/@sammed.mangave20">
-            <img src="/images/Md.png" alt="" className="iicoIM" />
-          </a>
-          <a href="/essays/index.html" className="dlink">
-            [Essays]
-          </a>
-          <a href="https://http.cat/409" className="dlink">
-            [Resume]
-          </a>
-          <a href="https://http.cat/409" className="dlink">
-            [Papers]
-          </a>
+          <a href="https://twitter.com/SammedMangave">Twitter</a>
+          <a href="https://github.com/samycolen">GitHub</a>
+          <a href="https://www.linkedin.com/in/SammedMangave/">LinkedIn</a>
+          <a href="https://www.instagram.com/_sammed.mangave/">Instagram</a>
+          <a href="https://vsco.co/arts-by-sammed/gallery">Arts</a>
+          <a href="https://sammedmangave.substack.com/">Essays</a>
         </div>
       </div>
 
-      <div id="dproj" className="Ddesc">
-        <p>Projects</p>
+      {/* ================= RESEARCH SECTION ================= */}
+      <div id="research" className="Ddesc">
+        <h2>Research</h2>
+
+        {research.map((r, i) => (
+          <div key={i} className="researchItem">
+            <h3>{r.title}</h3>
+
+            <p className="authors">{r.authors}</p>
+
+            <p>{r.description}</p>
+
+            <p className="status">{r.status}</p>
+
+            <p>
+              {r.paperLink && <a href={r.paperLink}>[Paper]</a>}{" "}
+              {r.codeLink && <a href={r.codeLink}>[Code]</a>}{" "}
+              {r.dateset && <a href={r.dateset}>[Dataset]</a>}
+            </p>
+          </div>
+        ))}
       </div>
 
-      <div className="Ddesc">
-        <ul>
-          {projects.map((project, index) => (
-            <>
-              <li key={index} className="DlistDiv">
-                <div className="DlistInfo">
-                  {/* Left side with [info] link that toggles the box */}[
-                  <a
-                    href={project.infoLink}
-                    onClick={(e) => toggleProject(e, index)}
-                    className=" text-red-500 underline mr-4"
-                  >
-                    info
-                  </a>
-                  ]
-                </div>
+      {/* ================= PROJECTS SECTION ================= */}
 
-                {/* Right side with project title and description */}
-                <div>
-                  <a href={project.GHlink} className="DlistDesc ">
-                    {project.title}
-                  </a>{" "}
-                  - {project.description}
-                </div>
-              </li>
-              {/* Conditionally render the box when expanded */}
+      <div id="projects" className="Ddesc">
+        <h2>Projects</h2>
 
-              {expandedProject.includes(index) && (
-                <div
-                  id="DlistDivDown"
-                  key={index + `-details`}
-                  className="DlistDiv "
-                >
-                  <div className="dProjSpan">
-                    {/* logo of the project */}
-                    {project.logo && (
-                      <p>
-                        <img
-                          src={project.logo}
-                          alt={`${project.title} logo`}
-                          className="dProjSpanLogo"
-                        />
-                      </p>
-                    )}
-                    {/* 2. heading of the projet */}
-                    <p className="dProjSpanHead">
-                      <a href={project.GHlink}>{project.title}</a>
-                    </p>
-
-                    {/* 3 descriptioin of the project */}
-                    <p>{project.boxDescription}</p>
-
-                    {/* 4  image in the description */}
-
-                    {project.imagePath && (
-                      <p>
-                        <img
-                          src={project.imagePath}
-                          alt={`${project.title} imagePath`}
-                          className="dProjSpanImage"
-                        />
-                      </p>
-                    )}
-                  </div>
-                </div>
+        <div className="projectGrid">
+          {projects.map((p, i) => (
+            <a key={i} href={p.link} target="_blank" className="projectCard" rel="noreferrer">
+              {p.video ? (
+                <video
+                  src={p.video}
+                  className="projectVideo"
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
+                />
+              ) : (
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="projectImage"
+                />
               )}
-            </>
+              <h3 className="projectTitle">{p.title}</h3>
+
+              <p className="projectDesc">{p.description}</p>
+            </a>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
